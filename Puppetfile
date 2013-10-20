@@ -60,4 +60,25 @@ github "xquartz",     "1.1.1"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
+# applications
+
+github "alfred",     "1.1.5"
+github "caffeine",   "1.0.0"
+github "cyberduck",  "1.0.1"
+github "divvy",      "1.0.1"
 github "dropbox",    "1.1.1"
+github "onepassword", "1.0.1"
+github "skype",      "1.0.6"
+github "spotify",    "1.0.1"
+github "virtualbox", "1.0.6"
+github "vlc",        "1.0.5"
+
+
+# libs
+
+github "ctags",      "1.0.0"
+github "java",       "1.1.0"
+
+# modules
+
+github "property_list_key", "0.1.0"
