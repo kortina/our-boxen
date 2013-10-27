@@ -1,6 +1,9 @@
 class people::kortina {
     # applications
+    include airfoil
     include alfred
+    include bash
+    include bash::completion
     include caffeine
     include cyberduck
     include divvy
@@ -14,5 +17,8 @@ class people::kortina {
     # libs
     include ctags
     include java
+
+    # custom
+    include people::kortina::mac
 
 }

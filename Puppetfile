@@ -38,23 +38,24 @@ github "module-data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
+=======
+github "autoconf",   "1.0.0"
+github "bash",       "1.1.0"
 github "dnsmasq",     "1.0.1"
-github "foreman",     "1.2.0"
 github "gcc",         "2.0.101"
 github "git",         "2.4.0"
-github "go",          "1.1.0"
 github "homebrew",    "1.9.3"
 github "hub",         "1.3.0"
 github "inifile",     "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
-github "nginx",       "1.4.3"
 github "nodejs",      "3.7.0"
-github "openssl",     "1.0.0"
-github "phantomjs",   "2.3.0"
+github "openssl",    "1.0.0"
+github "osx",        "1.6.0"
 github "pkgconfig",   "1.0.0"
 github "repository",  "2.3.0"
 github "ruby",        "8.0.4"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
-github "sudo",        "1.0.0"
+github "sudo",       "1.0.0"
+github "vim",        "1.0.5"
 github "xquartz",     "1.1.1"
 
 # Optional/custom modules. There are tons available at
@@ -62,6 +63,7 @@ github "xquartz",     "1.1.1"
 
 # applications
 
+github "airfoil",    "0.0.1"
 github "alfred",     "1.1.5"
 github "caffeine",   "1.0.0"
 github "cyberduck",  "1.0.1"
