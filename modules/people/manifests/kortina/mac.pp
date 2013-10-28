@@ -36,21 +36,18 @@ property_list_key { 'Terminal - Startup Window Settings':
   }
 
 # install dotfiles
-$dotfiles_dir = "/opt/boxen/repo/files/${::boxen_user}/dotfiles"
+$dotfiles = "/opt/boxen/dotfiles"
 
-
-# TODO: probably should re-add this part
-# repository { $dotfiles_dir:
-#   source => "${::github_user}/dotfiles"
-# }
+repository { $dotfiles:
+   source => "kortina/dotfiles"
+}
 
 exec { "install dotfiles":
-  cwd      => $dotfiles_dir,
-  command  => "./script/bootstrap",
+  cwd      => $dotfiles,
+  command  => "./install.sh",
   provider => shell,
-  user => $boxen_user
-  # creates  => "${home}/.zshrc",
-  # require  => Repository[$dotfiles_dir]
+  user => $boxen_user,
+  require  => Repository[$dotfiles]
 }
 
 }

@@ -18,6 +18,11 @@ class people::kortina {
     include ctags
     include java
 
+    # install homebrew packages
+    package { 'jsl':
+        ensure => present
+    }
+
     # custom
     include people::kortina::mac
 

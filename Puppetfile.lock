@@ -134,6 +134,11 @@ GITHUBTARBALL
     sudo (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-vim
+  specs:
+    vim (1.0.5)
+
+GITHUBTARBALL
   remote: boxen/puppet-virtualbox
   specs:
     virtualbox (1.0.6)
@@ -188,6 +193,7 @@ DEPENDENCIES
   spotify (= 1.0.1)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  vim (= 1.0.5)
   virtualbox (= 1.0.6)
   vlc (= 1.0.5)
   xquartz (= 1.1.0)

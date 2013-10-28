@@ -1,6 +1,6 @@
 move Terminal Settings plist somewhere sensible
 
-
+https://github.com/jasonamyers/my-boxen/blob/master/modules/people/manifests/jasonamyers.pp
 
 http://best-mac-tips.com/2012/08/29/remapping-os-x-application-keyboard-shortcuts/
 http://forums.macrumors.com/archive/index.php/t-180515.html
