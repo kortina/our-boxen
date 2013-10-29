@@ -17,8 +17,12 @@ class people::kortina {
     # libs
     include ctags
     include java
+    include vim
 
     # install homebrew packages
+    package { 'python': # and pip
+        ensure => present
+    }
     package { 'jsl':
         ensure => present
     }
