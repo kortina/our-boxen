@@ -27,6 +27,14 @@ class people::kortina {
         ensure => present
     }
 
+    # pip modules
+    exec { 'pip install flake8':
+        command => 'pip install flake8'
+    }
+    exec { 'pip install ipython':
+        command => 'pip install ipython'
+    }
+
     # custom
     include people::kortina::mac
 
