@@ -4,6 +4,9 @@ Most of my customizations are in:
 
 * https://github.com/kortina/our-boxen/blob/master/modules/people/manifests/kortina.pp
 
+Todos at:
+
+* https://github.com/kortina/our-boxen/blob/master/TODO.md
 
 # Our Boxen
 

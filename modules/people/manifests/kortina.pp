@@ -6,7 +6,7 @@ class people::kortina {
     include bash::completion
     include caffeine
     include cyberduck
-    include divvy
+    # include divvy # I install from app store instead
     include dropbox
     include onepassword
     include skype
