@@ -1,3 +1,11 @@
+#### My Cusomizations
+
+Most of my customizations are in:
+
+    * https://github.com/kortina/our-boxen/blob/master/modules/people/manifests/kortina.pp
+    * https://github.com/kortina/our-boxen/blob/master/modules/people/manifests/kortina/mac.pp
+
+
 # Our Boxen
 
 This is a template Boxen project designed for your organization to fork and
