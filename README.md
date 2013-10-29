@@ -2,8 +2,8 @@
 
 Most of my customizations are in:
 
-    * https://github.com/kortina/our-boxen/blob/master/modules/people/manifests/kortina.pp
-    * https://github.com/kortina/our-boxen/blob/master/modules/people/manifests/kortina/mac.pp
+* https://github.com/kortina/our-boxen/blob/master/modules/people/manifests/kortina.pp
+* https://github.com/kortina/our-boxen/blob/master/modules/people/manifests/kortina/mac.pp
 
 
 # Our Boxen
