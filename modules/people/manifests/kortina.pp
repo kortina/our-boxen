@@ -43,27 +43,21 @@ class people::kortina {
     # could not get this part working with property_list_key
     $window_settings = file("/opt/boxen/repo/Termina_Window_Settings.plist")
     exec { "set terminal prefs" :
-	command => "defaults write com.apple.Terminal \"Window Settings\" '${window_settings}'",
-	user => $boxen_user
+      command => "defaults write com.apple.Terminal \"Window Settings\" '${window_settings}'",
+      user => $boxen_user
     }
     # ensure correct ownership (was seeing root ownership after some boxen runs)
     exec { "ensure ~/Library/Preferences ownership" :
-	command => "chown -fR ${::boxen_user}:staff /Users/${::boxen_user}/Library/Preferences",
-	user => "root"
+      command => "chown -fR ${::boxen_user}:staff /Users/${::boxen_user}/Library/Preferences",
+      user => "root"
     }
-    property_list_key { 'Terminal - Default Window Settings':
-        ensure     => present,
-        path       => "${home}/Library/Preferences/com.apple.Terminal.plist",
-        key        => 'Default Window Settings',
-        value      => 'ir_black_lion', 
-        value_type => 'string'
+    exec { "Terminal - Default Window Settings" :
+      command => "defaults write com.apple.Terminal 'Default Window Settings' 'ir_black_lion'",
+      unless  => "defaults read com.apple.Terminal 'Default Window Settings' | grep -q ir_black_lion"
     }
-    property_list_key { 'Terminal - Startup Window Settings':
-        ensure     => present,
-        path       => "${home}/Library/Preferences/com.apple.Terminal.plist",
-        key        => 'Startup Window Settings',
-        value      => 'ir_black_lion', 
-        value_type => 'string'
+    exec { "Terminal - Startup Window Settings" :
+      command => "defaults write com.apple.Terminal 'Startup Window Settings' 'ir_black_lion'",
+      unless  => "defaults read com.apple.Terminal 'Startup Window Settings' | grep -q ir_black_lion"
     }
     exec { "show date in menubar" :
 	command => "defaults write com.apple.menuextra.clock DateFormat 'EEE MMM d  h:mm a' && killall SystemUIServer",
