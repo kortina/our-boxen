@@ -20,9 +20,10 @@ class people::kortina {
     include vim
 
     # install homebrew packages
-    package { 'python': # and pip
-        ensure => present
-    }
+    package { 'python': ensure => present } # seems to be some sort of problem where this does not install pip in mavericks
+    # exec { 'brew install python': command => 'brew install python' }
+    # exec { 'brew list': command => 'brew list' }
+
     package { 'jsl':
         ensure => present
     }

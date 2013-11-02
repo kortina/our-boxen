@@ -9,11 +9,6 @@ GITHUBTARBALL
     alfred (1.1.5)
 
 GITHUBTARBALL
-  remote: boxen/puppet-autoconf
-  specs:
-    autoconf (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-bash
   specs:
     bash (1.1.0)
@@ -21,7 +16,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.0.2)
+    boxen (3.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-caffeine
@@ -44,19 +39,9 @@ GITHUBTARBALL
     divvy (1.0.1)
 
 GITHUBTARBALL
-  remote: boxen/puppet-dnsmasq
-  specs:
-    dnsmasq (1.0.0)
-
-GITHUBTARBALL
   remote: boxen/puppet-dropbox
   specs:
     dropbox (1.1.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-gcc
-  specs:
-    gcc (2.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-git
@@ -66,27 +51,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.4.1)
-
-GITHUBTARBALL
-  remote: boxen/puppet-hub
-  specs:
-    hub (1.0.3)
+    homebrew (1.5.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
     java (1.1.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nginx
-  specs:
-    nginx (1.4.2)
-
-GITHUBTARBALL
-  remote: boxen/puppet-nodejs
-  specs:
-    nodejs (3.2.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
@@ -166,23 +136,17 @@ GITHUBTARBALL
 DEPENDENCIES
   airfoil (= 0.0.1)
   alfred (= 1.1.5)
-  autoconf (= 1.0.0)
   bash (= 1.1.0)
-  boxen (= 3.0.2)
+  boxen (= 3.1.0)
   caffeine (= 1.0.0)
   ctags (= 1.0.0)
   cyberduck (= 1.0.1)
   divvy (= 1.0.1)
-  dnsmasq (= 1.0.0)
   dropbox (= 1.1.1)
-  gcc (= 2.0.1)
   git (= 1.2.5)
-  homebrew (= 1.4.1)
-  hub (= 1.0.3)
+  homebrew (= 1.5.0)
   inifile (= 1.0.0)
   java (= 1.1.0)
-  nginx (= 1.4.2)
-  nodejs (= 3.2.9)
   onepassword (= 1.0.1)
   openssl (= 1.0.0)
   osx (= 1.6.0)

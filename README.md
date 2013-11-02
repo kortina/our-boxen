@@ -1,20 +1,21 @@
-#### My Cusomizations
+# Our Boxen Fork
 
-Most of my customizations are in:
+This is a fork of https://github.com/boxen/our-boxen .  If you plan on using a fork of my boxen repo, you should be sure to checkout the source README here:
+
+* https://github.com/boxen/our-boxen/blob/master/README.md
+
+NB: I removed the following modules that ship by default with the `boxen/our-boxen` repo (from `Puppetfile` and `site.pp`):
+
+`autoconf`, `dnsmasq`, `gcc`, `nginx`, `Node.js 0.4`, `Node.js 0.6`, `Node.js 0.8`, `Ruby 1.8.7`, `Ruby 1.9.2`, `Ruby 1.9.3` 
+
+Most of my other customizations are in:
 
 * https://github.com/kortina/our-boxen/blob/master/modules/people/manifests/kortina.pp
 
-Todos at:
+This is still a work in progress.  Todos are in:
 
 * https://github.com/kortina/our-boxen/blob/master/TODO.md
 
-# Our Boxen
-
-This is a template Boxen project designed for your organization to fork and
-modify appropriately.
-The Boxen rubygem and the Boxen puppet modules are only a framework for getting
-things done.
-This repository template is just a basic example of _how_ to do things with them.
 
 ## Getting Started
 
@@ -41,6 +42,8 @@ and detect most of these and tell you anyway):
 
 ### Dependencies
 
+NB: One of the first things you may want to do is grab your ssh private key and `ssh-add` it.
+
 **Install the Xcode Command Lines Tools and/or full Xcode.**
 This will grant you the most predictable behavior in building apps like
 MacVim.
@@ -63,6 +66,7 @@ Otherwise, follow instructions below.
 
 ### Bootstrapping
 
+<<<<<<< HEAD
 Create a **new** git repository somewhere on the internet.
 It can be private or public -- it really doesn't matter.
 If you're making a repository on GitHub, you _may not_ want to fork this repo
@@ -115,6 +119,9 @@ If you do not want to do encrypt your hard drive, you can use the `--no-fde`.
 ```
 ./script/boxen --no-fde
 ```
+=======
+See: https://github.com/boxen/our-boxen/blob/master/README.md#bootstrapping
+>>>>>>> mavericks updates
 
 It should run successfully, and should tell you to source a shell script
 in your environment.
@@ -131,6 +138,7 @@ Once your shell is ready, open a new tab/window in your Terminal
 and you should be able to successfully run `boxen --env`.
 If that runs cleanly, you're in good shape.
 
+<<<<<<< HEAD
 ## What You Get
 
 This template project provides the following by default:
@@ -280,6 +288,10 @@ everyone by default. An example of this might look like so:
  * [Classes](http://docs.puppetlabs.com/learning/modules1.html#classes)
  * [Defined Types](http://docs.puppetlabs.com/learning/definedtypes.html)
  * [Facts](http://docs.puppetlabs.com/guides/custom_facts.html)
+=======
+## Customizing
+
+See: https://github.com/boxen/our-boxen/blob/master/README.md#customizing
 
 ### Creating a personal module
 
@@ -294,6 +306,7 @@ See [the documentation in the
 `modules/projects`](modules/projects/README.md)
 directory for creating organization projects (i.e., repositories that people
 will be working in).
+<<<<<<< HEAD
 
 ## Binary packages
 

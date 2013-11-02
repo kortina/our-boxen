@@ -1,5 +1,9 @@
 move Terminal Settings plist somewhere sensible
 
+undo nginx / dnsmasq
+
+puppet web
+
 https://github.com/jasonamyers/my-boxen/blob/master/modules/people/manifests/jasonamyers.pp
 
 man bash completion https://bbs.archlinux.org/viewtopic.php?id=90513
