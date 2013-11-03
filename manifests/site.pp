@@ -1,6 +1,6 @@
 require boxen::environment
 require homebrew
-require gcc
+#k require gcc
 
 Exec {
   group       => 'staff',
