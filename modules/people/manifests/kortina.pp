@@ -21,8 +21,7 @@ class people::kortina {
 
     # install homebrew packages
     package { 'python': ensure => present } # seems to be some sort of problem where this does not install pip in mavericks
-    # exec { 'brew install python': command => 'brew install python' }
-    # exec { 'brew list': command => 'brew list' }
+    exec { 'easy_install pip': command => 'easy_install pip' }
 
     package { 'jsl':
         ensure => present

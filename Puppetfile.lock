@@ -54,6 +54,11 @@ GITHUBTARBALL
     homebrew (1.5.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-hub
+  specs:
+    hub (1.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-java
   specs:
     java (1.1.0)
@@ -145,6 +150,7 @@ DEPENDENCIES
   dropbox (= 1.1.1)
   git (= 1.2.5)
   homebrew (= 1.5.0)
+  hub (= 1.0.3)
   inifile (= 1.0.0)
   java (= 1.1.0)
   onepassword (= 1.0.1)
