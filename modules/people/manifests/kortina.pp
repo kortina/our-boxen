@@ -1,6 +1,5 @@
 class people::kortina {
     # applications
-    include airfoil
     include alfred
     include bash
     include bash::completion

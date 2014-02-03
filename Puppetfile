@@ -58,7 +58,6 @@ github "xquartz",     "1.1.1"
 
 # applications
 
-github "airfoil",    "0.0.1"
 github "alfred",     "1.1.5"
 github "caffeine",   "1.0.0"
 github "cyberduck",  "1.0.1"
