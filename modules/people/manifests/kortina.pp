@@ -87,11 +87,6 @@ class people::kortina {
     ########################################
     # various symlinks
     ########################################
-     file { "${home}/.ssh":
-        ensure => 'link',
-        target => "${home}/Dropbox/nix/ssh",
-        force  => true
-    }
      file { "/Applications/Screen\\ Sharing.app":
         ensure => 'link',
         target => "/System/Library/CoreServices/Screen\\ Sharing.app",
