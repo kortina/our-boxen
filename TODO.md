@@ -20,4 +20,4 @@ https://github.com/holman/dotfiles/blob/master/osx/set-defaults.sh
 https://github.com/boxen/our-boxen/issues/103
 https://github.com/danhorst/dotfiles
 
-
+Add nosecomplete: https://github.com/alonho/nosecomplete
