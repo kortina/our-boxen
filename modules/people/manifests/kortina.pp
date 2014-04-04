@@ -1,4 +1,7 @@
 class people::kortina {
+    # NB: you should also add the corresponding source for these includes in
+    # `Puppetfile`
+
     # applications
     include alfred
     include bash
@@ -16,15 +19,16 @@ class people::kortina {
     # libs
     include ctags
     include java
+    include tmux
     include vim
 
     # install homebrew packages
     package { 'python': ensure => present } # seems to be some sort of problem where this does not install pip in mavericks
     exec { 'easy_install pip': command => 'easy_install pip' }
 
-    package { 'jsl':
-        ensure => present
-    }
+    # package { 'jsl':
+        # ensure => present
+    # }
 
     # pip modules
     exec { 'pip install flake8':
@@ -74,6 +78,14 @@ class people::kortina {
 
     repository { $dotfiles:
         source => "kortina/dotfiles"
+    }
+
+    exec { "update submodules in dotfiles":
+        cwd      => $dotfiles,
+        command  => "git submodule update",
+        provider => shell,
+        user => $boxen_user,
+        require  => Repository[$dotfiles]
     }
 
     exec { "install dotfiles":
