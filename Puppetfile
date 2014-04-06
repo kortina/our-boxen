@@ -50,7 +50,6 @@ github "repository",  "2.3.0"
 github "ruby",        "8.0.4"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
-github "tmux",       "1.0.2"
 github "vim",        "1.0.5"
 github "xquartz",     "1.1.1"
 
