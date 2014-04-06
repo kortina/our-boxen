@@ -80,14 +80,6 @@ class people::kortina {
         source => "kortina/dotfiles"
     }
 
-    exec { "update submodules in dotfiles":
-        cwd      => $dotfiles,
-        command  => "git submodule update",
-        provider => shell,
-        user => $boxen_user,
-        require  => Repository[$dotfiles]
-    }
-
     exec { "install dotfiles":
         cwd      => $dotfiles,
         command  => "./install.sh",
