@@ -1,3 +1,6 @@
+kill hotcorners, per
+    https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+
 move Terminal Settings plist somewhere sensible
 
 undo nginx / dnsmasq
