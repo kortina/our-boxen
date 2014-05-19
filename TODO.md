@@ -24,3 +24,7 @@ https://github.com/boxen/our-boxen/issues/103
 https://github.com/danhorst/dotfiles
 
 Add nosecomplete: https://github.com/alonho/nosecomplete
+
+
+http://stackoverflow.com/questions/7219134/programmatically-add-keyboard-shortcut-to-mac-system-preferences
+http://superuser.com/questions/670584/how-can-i-migrate-all-keyboard-shortcuts-from-one-mac-to-another
