@@ -39,7 +39,7 @@ github "module-data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
 github "autoconf",   "1.0.0"
 github "bash",       "1.1.0"
-github "git",         "2.4.0"
+github "git",        "2.4.0"
 github "homebrew",    "1.9.3"
 github "hub",         "1.3.0"
 github "inifile",     "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
