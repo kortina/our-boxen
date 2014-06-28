@@ -52,6 +52,21 @@ class people::kortina {
         command => "defaults write com.apple.menuextra.clock DateFormat 'EEE MMM d  h:mm a' && killall SystemUIServer",
         unless => "defaults read com.apple.menuextra.clock DateFormat | grep -q MMM"
     }
+    ########################################
+    # install dotbuild #TODO: this will eventually be a pip install
+    ########################################
+    $dotbuild = "/opt/boxen/dotbuild"
+
+    repository { $dotbuild:
+        source => "kortina/dotbuild"
+    }
+    exec { "install dotbuild":
+        cwd      => $dotbuild,
+        command  => "pip install -e .",
+        provider => shell,
+        user => $boxen_user,
+        require  => Repository[$dotbuild]
+    }
 
     ########################################
     # install dotfiles
@@ -64,10 +79,14 @@ class people::kortina {
 
     exec { "install dotfiles":
         cwd      => $dotfiles,
-        command  => "./install.sh",
+        command  => "dotbuild --no-confirm",
         provider => shell,
         user => $boxen_user,
-        require  => Repository[$dotfiles]
+        require  => [
+			Repository[$dotfiles],
+			Repository[$dotbuild],
+			Exec["install dotbuild"]
+		    ]
     }
 
     ########################################
