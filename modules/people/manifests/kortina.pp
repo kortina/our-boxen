@@ -43,6 +43,10 @@ class people::kortina {
         command => 'pip install git+git://github.com/Lokaltog/powerline'
     }
 
+    exec { 'pip install nose-run-line-number':
+        command => 'pip install nose-run-line-number'
+    }
+
     $home = "/Users/${::boxen_user}"
 
     ########################################
