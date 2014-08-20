@@ -98,7 +98,7 @@ class people::kortina {
     ########################################
     $bakpak = "/opt/boxen/bakpak"
 
-    repository { $bakpak
+    repository { $bakpak:
         source => "kortina/bakpak"
     }
 
