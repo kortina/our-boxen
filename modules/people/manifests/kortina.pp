@@ -94,6 +94,15 @@ class people::kortina {
     }
 
     ########################################
+    # install bakpak
+    ########################################
+    $bakpak = "/opt/boxen/bakpak"
+
+    repository { $bakpak
+        source => "kortina/bakpak"
+    }
+
+    ########################################
     # various symlinks
     ########################################
      file { "/Applications/Screen\\ Sharing.app":
