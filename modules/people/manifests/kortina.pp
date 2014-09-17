@@ -1,30 +1,30 @@
+# libs
+
+github "autoconf",   "1.0.0"
+github "bash",       "1.1.0"
+github "ctags",      "1.0.0"
+github "git",        "2.4.0"
+github "java",       "1.1.0"
+github "openssl",    "1.0.0"
+github "osx",        "1.6.0"
+github "property_list_key", "0.1.0"
+github "sudo",       "1.0.0"
+github "vim",        "1.0.5"
+
+# applications
+
+github "alfred",     "1.1.5"
+github "caffeine",   "1.0.0"
+github "cyberduck",  "1.0.1"
+github "divvy",      "1.0.1"
+github "dropbox",    "1.1.1"
+github "onepassword", "1.0.1"
+github "skype",      "1.0.6"
+github "spotify",    "1.0.1"
+github "virtualbox", "1.0.6"
+github "vlc",        "1.0.5"
+
 class people::kortina {
-
-    # libs
-
-    github "autoconf",   "1.0.0"
-    github "bash",       "1.1.0"
-    github "ctags",      "1.0.0"
-    github "git",        "2.4.0"
-    github "java",       "1.1.0"
-    github "openssl",    "1.0.0"
-    github "osx",        "1.6.0"
-    github "property_list_key", "0.1.0"
-    github "sudo",       "1.0.0"
-    github "vim",        "1.0.5"
-
-    # applications
-
-    github "alfred",     "1.1.5"
-    github "caffeine",   "1.0.0"
-    github "cyberduck",  "1.0.1"
-    github "divvy",      "1.0.1"
-    github "dropbox",    "1.1.1"
-    github "onepassword", "1.0.1"
-    github "skype",      "1.0.6"
-    github "spotify",    "1.0.1"
-    github "virtualbox", "1.0.6"
-    github "vlc",        "1.0.5"
 
 
     # libs
