@@ -1,33 +1,7 @@
-# libs
-
-github "autoconf",   "1.0.0"
-github "bash",       "1.1.0"
-github "ctags",      "1.0.0"
-github "git",        "2.4.0"
-github "java",       "1.1.0"
-github "openssl",    "1.0.0"
-github "osx",        "1.6.0"
-github "property_list_key", "0.1.0"
-github "sudo",       "1.0.0"
-github "vim",        "1.0.5"
-
-# applications
-
-github "alfred",     "1.1.5"
-github "caffeine",   "1.0.0"
-github "cyberduck",  "1.0.1"
-github "divvy",      "1.0.1"
-github "dropbox",    "1.1.1"
-github "onepassword", "1.0.1"
-github "skype",      "1.0.6"
-github "spotify",    "1.0.1"
-github "virtualbox", "1.0.6"
-github "vlc",        "1.0.5"
-
 class people::kortina {
 
-
     # libs
+
     include ctags
     include java
     include vim
@@ -35,15 +9,12 @@ class people::kortina {
     include hub
 
     # applications
+
     include alfred
     include bash
     include bash::completion
     include caffeine
-    # include cyberduck # using transmit instead
-    # include divvy # I install from app store instead
     include dropbox
-    include onepassword
-    include skype
     include spotify
     include virtualbox
     include vlc
@@ -52,7 +23,15 @@ class people::kortina {
     package { 'tmux': ensure => present } # seems to be failing right now. just `brew install tmux` in a shell and this should pass
 
     package { 'python': ensure => present } # seems to be some sort of problem where this does not install pip in mavericks
+    
     exec { 'easy_install pip': command => 'easy_install pip' }
+
+    # This seems to be insanely slow. Not sure why. May be better installing this via web.
+    # package { 'Boot2Docker':
+    #   provider => 'pkgdmg',
+    #   source   => 'https://github.com/boot2docker/osx-installer/releases/download/v1.2.0/Boot2Docker-1.2.0.pkg',
+    #   unless   => 'which boot2docker'
+    # }
 
     # package { 'jsl':
         # ensure => present
@@ -83,6 +62,18 @@ class people::kortina {
         command => "defaults write com.apple.menuextra.clock DateFormat 'EEE MMM d  h:mm a' && killall SystemUIServer",
         unless => "defaults read com.apple.menuextra.clock DateFormat | grep -q MMM"
     }
+
+    ########################################
+    # OS X
+    ########################################
+
+    # $gdrive_screenshots_dir =  "${home}/Google-Drive/_screenshots" 
+
+    # exec { "change screenshot folder location to Google-Drive" :
+    #     command => "test -d ${gdrive_screenshots_dir} && defaults write com.apple.screencapture location ${gdrive_screenshots_dir} && killall SystemUIServer",
+    #     unless => "defaults read com.apple.menuextra.screencapture location | grep -q '${gdrive_screenshots_dir}"
+    # }
+
     ########################################
     # install dotbuild #TODO: this will eventually be a pip install
     ########################################
