@@ -60,3 +60,24 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+# libs
+
+github "autoconf",   "1.0.0"
+github "bash",       "1.1.0"
+github "ctags",      "1.0.0"
+github "java",       "1.1.0"
+github "osx",        "1.6.0"
+github "property_list_key", "0.1.0"
+github "vim",        "1.0.5"
+
+# applications
+
+github "alfred",     "1.3.1"
+github "caffeine",   "1.0.0"
+github "docker",     "1.0.3", :repo => "morgante/puppet-docker"
+github "dropbox",    "1.4.0"
+github "spotify",    "1.0.2"
+github "virtualbox", "1.0.13"
+github "vlc",        "1.1.0"
+
