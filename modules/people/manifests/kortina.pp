@@ -19,6 +19,8 @@ class people::kortina {
     include virtualbox
     include vlc
 
+    $home = "/Users/${::boxen_user}"
+
     # install homebrew packages
     package { 'tmux': ensure => present } # seems to be failing right now. just `brew install tmux` in a shell and this should pass
 
@@ -37,7 +39,9 @@ class people::kortina {
         # ensure => present
     # }
 
+    ########################################
     # pip modules
+    ########################################
     exec { 'pip install flake8':
         command => 'pip install flake8'
     }
@@ -53,7 +57,11 @@ class people::kortina {
         command => 'pip install nose-run-line-number'
     }
 
-    $home = "/Users/${::boxen_user}"
+    ########################################
+    # node modules
+    ########################################
+
+    nodejs::module { 'livedown': node_version => 'v0.10' }
 
     ########################################
     # Terminal
