@@ -64,16 +64,12 @@ class people::kortina {
     nodejs::module { 'livedown': node_version => 'v0.10' }
 
     ########################################
-    # Terminal
+    # osx
     ########################################
-    exec { "show date in menubar" :
-        command => "defaults write com.apple.menuextra.clock DateFormat 'EEE MMM d  h:mm a' && killall SystemUIServer",
-        unless => "defaults read com.apple.menuextra.clock DateFormat | grep -q MMM"
+    exec { "setup osx defaults" :
+        command => "sh $home/.osx",
+			  require => Exec["install dotfiles"] 
     }
-
-    ########################################
-    # OS X
-    ########################################
 
     # $gdrive_screenshots_dir =  "${home}/Google-Drive/_screenshots" 
 
